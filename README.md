@@ -56,11 +56,14 @@ The **Halal Pairing** is an innovative platform developed to facilitate ethical 
     git clone https://github.com/Nouman-Amjad/HalalPairingApp.git
 ### **2. Set Up the Database**
 1. Install MySQL and create the database:
+    ```bash
     CREATE DATABASE HALAL_PAIRING;
 2. Import the database schema provided:
+    ```bash
     mysql -u root -p HALAL_PAIRING < schema.sql
 ### **3. Configure the Application**
 Update the database credentials in Password.java:
+    ```bash
     public static String DBpassword = "your_password";
 ### **4. Run the Application**
 1. Open the project in IntelliJ IDEA or Eclipse.
