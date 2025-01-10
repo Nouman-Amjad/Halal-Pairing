@@ -53,7 +53,7 @@ The **Halal Pairing** is an innovative platform developed to facilitate ethical 
 ## Installation and Setup
 
 ### **1. Clone the Repository**
-    ```bash
+    bash
         git clone https://github.com/Nouman-Amjad/HalalPairingApp.git
 
 ## Files
