@@ -54,8 +54,58 @@ The **Halal Pairing** is an innovative platform developed to facilitate ethical 
 
 ### **1. Clone the Repository**
     git clone https://github.com/Nouman-Amjad/HalalPairingApp.git
+### **2. Set Up the Database**
+1. Install MySQL and create the database:
+    CREATE DATABASE HALAL_PAIRING;
+2. Import the database schema provided:
+    mysql -u root -p HALAL_PAIRING < schema.sql
+### **3. Configure the Application**
+Update the database credentials in Password.java:
+    public static String DBpassword = "your_password";
+### **4. Run the Application**
+1. Open the project in IntelliJ IDEA or Eclipse.
+2. Run the Main class to launch the application. 
 
-## Files
-- **Main.cpp**: Entry point for the application.
-- **USER.h** & **util.h**: Contains user-related classes (Admin, Doctor, Patient).
-- **OLADOC.h**: Main application logic and menu system.
+## File Structure
+### Frontend
+- **FXML Files**: 
+    - **Login.fxml**: User login page. 
+    - **createAcc.fxml**: Registration page.
+    - **Chat.fxml**: Chat interface.
+- **Controllers**:
+    - **ChatboxController.java**: Handles messaging and chat navigation.
+    - **ChatController.java**: Manages chat content and history.
+### Business Logic
+- **Admin.java**: Handles user complaints and restrictions.
+- **HalalPairing.java**: Core business logic for user, event, and match management.
+- **Feedback.java**: Stores and manages user feedback.
+### Database Layer
+- **MatchDBhandler.java**: Manages user matches and similarity indices.
+- **PaymentDBhandler.java**: Processes user payments.
+- **ComplainDBhandler.java**: Handles complaints lodged by users.
+
+## How It Works - User Flow
+1. ### Registration:
+    - New users register with CNIC and secure credentials.
+2. ### Login:
+    - Users log in to access their dashboard.
+3. ### Matchmaking:
+    - Users explore potential matches and initiate chats.
+4. ### Event Participation:
+    - Users join community events.
+5. ### Feedback & Complaints:
+    - Users provide feedback or report issues.
+6. ### Admin Actions:
+    - Admin reviews complaints and manages user restrictions.
+
+## Future Enhancements:
+- Implement AI-driven matchmaking algorithms for improved compatibility.
+- Integrate a notification system for new matches and events.
+- Expand payment options to include international gateways.
+- Develop a mobile version for broader accessibility.
+
+## Acknowledgments
+Special thanks to the faculty at FAST-NUCES for their guidance and support during this project.
+
+## License
+This project is licensed under the MIT License.
