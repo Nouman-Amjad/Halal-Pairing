@@ -88,17 +88,17 @@ Update the database credentials in Password.java:
 - **ComplainDBhandler.java**: Handles complaints lodged by users.
 
 ## How It Works - User Flow
-1. ### Registration:
+### 1. Registration:
     - New users register with CNIC and secure credentials.
-2. ### Login:
+### 2. Login:
     - Users log in to access their dashboard.
-3. ### Matchmaking:
+### 3. Matchmaking:
     - Users explore potential matches and initiate chats.
-4. ### Event Participation:
+### 4. Event Participation:
     - Users join community events.
-5. ### Feedback & Complaints:
+### 5. Feedback & Complaints:
     - Users provide feedback or report issues.
-6. ### Admin Actions:
+### 6. Admin Actions:
     - Admin reviews complaints and manages user restrictions.
 
 ## Future Enhancements:
