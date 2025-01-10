@@ -63,7 +63,7 @@ The **Halal Pairing** is an innovative platform developed to facilitate ethical 
     mysql -u root -p HALAL_PAIRING < schema.sql
 ### **3. Configure the Application**
 Update the database credentials in Password.java:
-    ```bash
+    ```code
     public static String DBpassword = "your_password";
 ### **4. Run the Application**
 1. Open the project in IntelliJ IDEA or Eclipse.
